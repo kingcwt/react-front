@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full text-center'>kingcwt</div>
+      <div className='w-full text-center'>kingcwt try</div>
       <ul className="divide-y divide-gray-200 w-full">
         {data.map((item) => (
           <li key={item.email} className="py-4 flex">
