@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-
 type DataType = {
   name: string;
   email: string;
@@ -14,6 +13,7 @@ function App() {
     (async () => {
       const response = await fetch('/api/list');
       const jsonData = await response.json();
+      console.log(jsonData,'jsonData')
       setData(jsonData)
     })()
   }, [])
